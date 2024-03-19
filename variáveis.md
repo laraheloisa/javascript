@@ -35,7 +35,7 @@ onde elas podem ser acessadas.*
 - escopo do bloco 
 
 
-## Global
+## - Global
 - ***Escopo Global*** --> Variáveis e funções declaradas **fora** de qualquer função ou bloco de código têm escopo global. Isso significa que eles podem ser acessados de qualquer lugar no código, incluindo dentro de funções ou blocos de código.
 
 
@@ -45,7 +45,7 @@ onde elas podem ser acessadas.*
     var globalVar = 'Isso é global';
      
 
-## Função
+## - Função
 
 - *Escopo Função:* Variáveis e funções declaradas **dentro** de uma função ou bloco de código têm escopo local. Isso significa que eles só podem ser acessados dentro dessa função ou bloco de código específico e não são visíveis fora dele.
 
@@ -69,7 +69,7 @@ onde elas podem ser acessadas.*
             // Tentando acessar localVar fora da função resultará em um erro
             // console.log(localVar); // Isso resultaria em um erro, pois localVar não está definido neste escopo
 
-## Bloco
+## - Bloco
 -  Variáveis declaradas com **let e const** têm escopo de bloco, o que significa que elas só são acessíveis dentro do bloco de código em que são declaradas, incluindo blocos de instruções condicionais (if, else, switch, etc.) e loops (for, while, do-while, etc.).
 
 
@@ -88,9 +88,57 @@ onde elas podem ser acessadas.*
         // console.log(blockVar);  // Isso resultaria em um erro, pois blockVar não está definido neste escopo
         // console.log(constBlockVar);  // Isso resultaria em um erro, pois constBlockVar não está definido neste escopo
 
+## Tipos de Dados
+*Tipos que podemos atribuir aos dados das variáveis. Podemos identificar cada dado, utilizando o operador **typeof***
+
 ## Tipos Primitivos
+ *São tipos de dados básicos que não são objetos*
+
+## - Number
+- *Possui tres valores simbólicos: +Infinity, -Infinity e NaN*
+
+- *Não existe um tipo definido para inteiros, todo número é Number*
+
+*Exemplo:* 42, 3.14
+
+## - String
+- *Sequência de caracteres.
+Exemplo: "Olá, mundo!"*
+
+## - Boolean
+- *Representa um valor verdadeiro (true) ou falso (false).
+Exemplo: **true, false***
+
+      var meuBooleanTrue = true;
+      var meuBooleanFalse = false;
+      console.log(meuBooleanTrue); // Saída: true
+      console.log(meuBooleanFalse); // Saída: false
+
+## - Undefined
+- *Representa um valor indefinido.* Exemplo:
+
+      var minhaVariavelIndefinida;
+      console.log(minhaVariavelIndefinida); // Saída: undefined
+
+## - Null
+-  *Representa um valor nulo ou vazio.*
+Exemplo:
+
+       var meuNull = null;
+       console.log(meuNull); // Saída: null
+
+## - Object
+- *O tipo de dado object em JavaScript é um tipo complexo que pode armazenar coleções de dados e funcionalidades. Comparando-a com um objeto do mundo real, uma caneta é um objeto com diversas propriedades como cor, design, material de que é feita, etc. Da mesma forma, objetos JavaScript podem ter propriedades que definem suas características.*
+Exemplo:
+
+      // Object
+      var meuObjeto = {
+         nome: "João",
+         idade: 30,
+         cidade: "São Paulo"
+      };
+      console.log(meuObjeto); // Saída: { nome: "João", idade: 30, cidade: "São Paulo" }
 
 
 
-*Itálico*
-***Negrito Itálico***
+
