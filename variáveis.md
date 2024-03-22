@@ -61,7 +61,7 @@ onde elas podem ser acessadas.*
     // Variável global
     var globalVar = "Isso é global";
 
-    function exemploEscopo() {
+    function exemploEscopo() 
     // Variável local dentro da função
     var localVar = "Isso é função";
     console.log(globalVar); // Saída: Isso é global
@@ -137,7 +137,6 @@ console.log(minhaString); // Saída: Olá, mundo!
 *Exemplo:* **true, false***
 
 `````` javascript
-
       var meuBooleanTrue = true;
       var meuBooleanFalse = false;
       console.log(meuBooleanTrue); // Saída: true
@@ -219,18 +218,44 @@ console.log(minhaString); // Saída: Olá, mundo!
 
 ``````
 - ESCOPO
+
+*Exercício 1)*
 ``````javascript
-   //Escopo Global
-   //    Declare uma variável x fora de qualquer função e atribua a ela um valor.
+   //Escopo Global e Escopo Função
+
+   // Declare uma variável x fora de qualquer função e atribua a ela um valor.
    //Declare uma função minhaFuncao() que imprime o valor de x.
    //Declare uma variável y dentro da função minhaFuncao() e atribua a ela um valor diferente de x.
    //Tente imprimir o valor de y fora da função minhaFuncao() e observe o resultado.
+
    var x = 10
 
-   function minhaFuncao{
-      var y = 
+   function minhaFuncao(){
+      var y = 10
       console.log(x);
+      console.log(y);
    }
-
-
+   
+   minhaFuncao(); // erro, pois y é uma variável da função e não é acessível fora dela.
 ``````
+*Exercício 2)*
+
+``````javascript
+   //Escopo bloco 
+
+   //
+   
+   function parOuImpar(numero){
+      let mensagem;
+
+      if(numero % 2 == 0){
+      mensagem = "O número é par"
+      } else{
+         mensagem = "O número é ímpar"
+      }
+   }
+``````
+
+
+
+
