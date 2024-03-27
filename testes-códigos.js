@@ -1,12 +1,9 @@
-function parOuImpar(numero){
-    let mensagem;
+//var nome = "lara";
+//console.log(nome);
 
-    if(numero % 2 == 0){
-    mensagem = "O número é par"
-    } else{
-       mensagem = "O número é ímpar"
-    }
- }
+//nome[0] = "heloisa";
 
- parOuImpar(numero)
-   
+//console.log(nome);
+
+//var str = "I love dogs!";
+//console.log(str.indexOf("dog"));
