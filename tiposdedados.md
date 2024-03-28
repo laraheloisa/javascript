@@ -73,4 +73,45 @@ console.log(minhaString); // Saída: Olá, mundo!
       };
       console.log(meuObjeto); // Saída: { nome: "João", idade: 30, cidade: "São Paulo" }
 ``````
-##Array
+## - Array
+ - Usados para armazenar vários valores em uma única variável.
+
+ - São consideradas como objetos, mas sevem como listas
+
+- Podemos ter itens com qualquer tipo de dado
+
+- Porém não por chave e valor, e sim índice
+
+*Exemplo:*
+
+```````javascript
+      var arr = [9, "Lara", true, {teste: 1, teste: 2}];
+      console.log(arr);
+
+      var arr2 = [2, 3, 4, 5, 6];
+      console.log(arr2);
+
+      // acessa o segundo elemento 
+      console.log(arr2[1]);
+      console.log(arr2[0]);
+
+      //inserir em um índice que não existe 
+      arr[4] = 10;
+
+      //acessando a chave e mudando o valor 
+      arr[0] = "Teste";
+
+      console.log(arr)
+
+      //
+
+      var x = carros.length;   // A propriedade length retorna o número de elementos
+      var y = carros.sort();   // O método sort() classifica os arrays
+      //
+      var frutas = ["Banana", "Laranja", "Maça", "Manga"];
+      frutas.length;   // o length de frutas é 4
+```````
+
+- A diferença entre Arrays e Objetos
+em JavaScript, os arrays usam índices numerados e os objetos usam índices nomeados.
+

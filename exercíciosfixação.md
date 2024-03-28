@@ -89,9 +89,75 @@
    //}
    //console.log(x); // Erro
 ``````
+- TIPOS DE DADOS
+
+*Exercício 1)*
+``````javascript
+ //Dado o seguinte conjunto de valores, determine o tipo de dado de cada um deles:
+
+   let a = 5; //number
+   let b = "Olá"; //string
+   let c = true; //boleano
+   let d = { nome: "João", idade: 25 }; //objeto
+   let e = [1, 2, 3]; //array
+
+ ``````
+ 
+- ARRAY
+
+*Exercício 1)*
+``````javascript
+
+   let arr = [];
+
+   let numeros = [1, 2, 3, 4, 5];
+   let frutas = ["Maçã", "Banana", "Laranja"];
 
 
+   console.log(numeros[0]); // Saída: 1
+   console.log(frutas[1]); // Saída: Banana
 
 
+   frutas[0] = "Pêra"; // Alterando "Maçã" para "Pêra"
+   console.log(frutas); // Saída: ["Pêra", "Banana", "Laranja"]
 
+``````
+- OPERADORES BÁSICOS
 
+*Exercício 1)*
+``````javascript
+// Exercício de Fixação: Operadores Básicos
+
+   let num1 = 10;
+   let num2 = 5;
+
+   let soma = num1 + num2;
+   console.log("Soma:", soma); //15
+
+   let subtracao = num1 - num2;
+   console.log("Subtração:", subtracao); //5
+
+   let multiplicacao = num1 * num2;
+   console.log("Multiplicação:", multiplicacao); //50
+
+   let divisao = num1 / num2;
+   console.log("Divisão:", divisao); // 2
+
+   let modulo = num1 % num2;
+   console.log("Módulo:", modulo);// 0
+
+``````
+*Exercício 2)*
+``````javascript
+// Verifique se um número é par ou ímpar utilizando operadores aritméticos e lógicos
+
+   let numero = 12;
+   if (numero % 2 === 0) {
+      console.log(numero + " é um número par.");
+   } else {
+      console.log(numero + " é um número ímpar.");
+   }
+
+   //par
+
+``````
