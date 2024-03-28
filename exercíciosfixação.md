@@ -68,9 +68,27 @@
 
 ``````javascript
    //Escopo bloco 
+   //soma
+      function soma(a, b) {
+      return a + b;
+   }
 
+   let resultado = 0;
+
+   if (true) {
+      resultado = soma(5, 10);
+   }
+
+   console.log("Resultado: " + resultado);
+   console.log(a)// erro
    //
-   
+
+   //if (true) {
+   //let x = 10; // x só é acessível dentro deste bloco
+   //console.log(x); // 10
+   //}
+   //console.log(x); // Erro
+``````
 
 
 

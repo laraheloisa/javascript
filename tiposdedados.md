@@ -73,3 +73,4 @@ console.log(minhaString); // Saída: Olá, mundo!
       };
       console.log(meuObjeto); // Saída: { nome: "João", idade: 30, cidade: "São Paulo" }
 ``````
+##Array

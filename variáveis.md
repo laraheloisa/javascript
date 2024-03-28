@@ -61,12 +61,11 @@ onde elas podem ser acessadas.*
     // Variável global
     var globalVar = "Isso é global";
 
-    function exemploEscopo() 
-    // Variável local dentro da função
+    function exemploEscopo(){
     var localVar = "Isso é função";
-    console.log(globalVar); // Saída: Isso é global
-    console.log(localVar); // Saída: Isso é local
-
+    console.log(globalVar); // global
+    console.log(localVar); // função local
+    }
     // Chamando a função
     exemploEscopo();
 
@@ -76,7 +75,7 @@ onde elas podem ser acessadas.*
 ``````
 
 ## - Bloco
--  Variáveis declaradas com **let e const** têm escopo de bloco, o que significa que elas só são acessíveis dentro do bloco de código em que são declaradas, incluindo blocos de instruções condicionais (if, else, switch, etc.) e loops (for, while, do-while, etc.).
+-  Variáveis declaradas com **let e const** têm escopo de bloco, o que significa que elas só são acessíveis dentro do bloco de código em que são declaradas, incluindo blocos de instruções condicionais (if, else, switch, etc.) e loops (for, while,  etc.).
 
 
 *Exemplo:* 
