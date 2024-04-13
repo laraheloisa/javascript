@@ -64,8 +64,8 @@ for(let btn of btnOperacoes){
  *  O elemento display é atualizado com o atributo operandoAtual
  */
 function atualizaDisplay(calculadora) {
-    calculadora.bufferTextoElemento.innerText = calculadora.operandoAnterior
-    calculadora.displayTextoElemento.innerText = calculadora.operandoAtual
+  calculadora.bufferTextoElemento.innerText = calculadora.operandoAnterior
+  calculadora.displayTextoElemento.innerText = calculadora.operandoAtual
     
 }
 
@@ -74,7 +74,9 @@ function atualizaDisplay(calculadora) {
  * Para atualizar o dispay, chame a função responsável por isso.
  */
 function limpaVariaveis(calculadora) {
-    calculadora.
+  calculadora.operandoAtual = '  '
+  calculadora.operandoAnterior = '  '
+  atualizaDisplay(calculadora)
       
 }
 
@@ -83,10 +85,12 @@ function limpaVariaveis(calculadora) {
  * - Adiciona um dígito no atributo operandoAtual e atualiza o display
  * O dígito "." deve receber um tratamento especial
  */
-function adicionaNumero(calculadora, numero) {    
-    //calculadora.operandoAtual = calculadora.operandoAtual + numero
-    //atualizaDisplay(calculadora)
-}
+function adicionaNumero(calculadora, numero) {  
+  calculadora.operandoAtual = calculadora.operandoAtual + numero
+  atualizaDisplay(calculadora)
+}  
+    
+
 
 /* Função chamada quando um botão de operador é pressionado
  * Essa função tem comportamentos diferentes dependendo do estado da calculadora.
@@ -96,7 +100,13 @@ function adicionaNumero(calculadora, numero) {
  * - armazenar o operador recebido por parâmetro no atributo operador do objeto calculadora.
  * - copiar operandoAtual para o operandoAnterior, deixando a calculadora preparada para receber o próximo número
  */
-function escolheOperador(calculadora, operador) {}
+function escolheOperador(calculadora, operador) {
+  calculadora.operador = operador
+  calculadora.operandoAnterior = calculadora.operandoAtual
+  calculadora.operandoAtual = ' '
+  atualizaDisplay(calculadora)
+
+}
 
 /* A função recebe o objeto calculadora e executa o calculo
  * - Verificar a operação a ser executada
@@ -104,7 +114,21 @@ function escolheOperador(calculadora, operador) {}
  * - Atualizar os atributos operador, operandoAnterior e operandoAtual
  * - Atualizar o display
  */
-function executaCalculo(calculadora) {}
+function executaCalculo(calculadora) {
+  if(calculadora.operador == "+"){
+    parseFloat(calculadora.operandoAtual) = calculadora.anterior + calculadora.atual
+  }
+  else if (calculadora.operador == "-" ){
+    parseFloat(calculadora.operandoAtual) = calculadora.anterior - calculadora.atual
+  }
+  else if (calculadora.operador == "*" ){
+    parseFloat(calculadora.operandoAtual) = calculadora.anterior * calculadora.atual
+  }
+  else if (calculadora.operador == "/" ){
+    parseFloat(calculadora.operandoAtual) = calculadora.anterior / calculadora.atual
+  }
+ 
+}
 
 /* Função chamada quando o botão delete for pressionado
  * Apaga o último dígito digitado no
