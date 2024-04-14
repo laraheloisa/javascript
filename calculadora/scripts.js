@@ -66,7 +66,7 @@ for(let btn of btnOperacoes){
 function atualizaDisplay(calculadora) {
   calculadora.bufferTextoElemento.innerText = calculadora.operandoAnterior
   calculadora.displayTextoElemento.innerText = calculadora.operandoAtual
-    
+  
 }
 
 
@@ -115,22 +115,35 @@ function escolheOperador(calculadora, operador) {
  * - Atualizar o display
  */
 function executaCalculo(calculadora) {
-  if(calculadora.operador == "+"){
-    parseFloat(calculadora.operandoAtual) = calculadora.anterior + calculadora.atual
+  let calculo;
+
+  if (calculadora.operador === "+"){
+    calculo = Number(calculadora.operandoAnterior) + Number(calculadora.operandoAtual)
   }
-  else if (calculadora.operador == "-" ){
-    parseFloat(calculadora.operandoAtual) = calculadora.anterior - calculadora.atual
+
+  if (calculadora.operador === "-"){
+    calculo = Number(calculadora.operandoAnterior) - Number(calculadora.operandoAtual)
   }
-  else if (calculadora.operador == "*" ){
-    parseFloat(calculadora.operandoAtual) = calculadora.anterior * calculadora.atual
+
+  if (calculadora.operador === "*"){
+    calculo = Number(calculadora.operandoAnterior) * Number(calculadora.operandoAtual)
   }
-  else if (calculadora.operador == "/" ){
-    parseFloat(calculadora.operandoAtual) = calculadora.anterior / calculadora.atual
+
+  if (calculadora.operador === "÷"){
+    calculo = Number(calculadora.operandoAnterior) / Number(calculadora.operandoAtual)
   }
+
+  calculadora.operandoAtual = calculo;
+  calculadora.operandoAnterior = ""
+  calculadora.operador = ""
+  atualizaDisplay(calculadora);
  
 }
 
 /* Função chamada quando o botão delete for pressionado
  * Apaga o último dígito digitado no
  */
-function apagaDigito(calculadora) {}
+function apagaDigito(calculadora) {
+  calculadora.operandoAtual = calculadora.operandoAtual.slice(0, -1)  
+  atualizaDisplay(calculadora)
+}
