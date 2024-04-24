@@ -4,6 +4,7 @@ const divcontador = document.querySelector("[txt-contador]")
 
 let tipocontagem = "caracteres"
 let ehContagemCaracteres = true
+let palavra = " "
 
 const handleBtnContar = (evento) => {
     console.log(evento.target.value) 
@@ -16,15 +17,12 @@ const handleBtnContar = (evento) => {
     ehContagemCaracteres = !ehContagemCaracteres 
 }
 
-function handleInputTexto (evento)  {
-
+function contadorCaracter (palavra){
+    console.log(palavra.contador.length)
+    palavra.contador.length = "palavra"
+    
 }
 
-
-
-
-
 btnContar.addEventListener("click", handleBtnContar) // capturar um evento 
-inputTexto.addEventListener("input", handleInputTexto)
 //capturar através do evento 
 //todos atributos que começa com on é um evento
