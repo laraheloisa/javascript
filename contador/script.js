@@ -2,9 +2,9 @@ const inputTexto = document.querySelector("[input-texto]")
 const btnContar = document.querySelector("[btn-contar]")
 const divcontador = document.querySelector("[txt-contador]")
 
-let tipocontagem = "caracteres"
+ 
 let ehContagemCaracteres = true
-let palavra = " "
+
 
 const handleBtnContar = (evento) => {
     console.log(evento.target.value) 
@@ -17,12 +17,14 @@ const handleBtnContar = (evento) => {
     ehContagemCaracteres = !ehContagemCaracteres 
 }
 
-function contadorCaracter (palavra){
-    console.log(palavra.contador.length)
-    palavra.contador.length = "palavra"
+inputTexto.addEventListener ("input", () => ){ //
+    let contador = 0;
+    if(tipocontagem=="caracteres"){
+    contador = inputTexto.value.length
     
-}
+    }
 
+}
 btnContar.addEventListener("click", handleBtnContar) // capturar um evento 
 //capturar através do evento 
 //todos atributos que começa com on é um evento
