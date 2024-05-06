@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,20 +9,104 @@
 
 body{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center; 
+    height: 100vh;
     background-color: green;
 }
 
-.container{
+.container-pai {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: white;
     border-radius: 10px;
-    width: 50vw;
+    width: 30vw;
     height: 40vh;
+    margin: auto;
+}
+
+.container-filho {
+    display: flex;
+    align-items: center;
 
 }
 
+.container-filho h1 {
+    font-family: "Schibsted Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px; 
+   
+}
+
+.icone-whatsapp {
+    width: 50px;
+    height: 50px; 
+    padding: 10px;
+}
+
+#input{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+
+}
+
+#input:focus {  /*efeito de foco, */
+    border-color: #007bff; /* altera a cor da borda para azul quando o input está em foco.*/
+    outline: none; /* remove a borda de destaque padrão do navegador, proporcionando uma experiência de usuário mais limpa.*/
+}
+
+#btn-icones{
+    background-color: green;
+    color: white;
+    border: none;
+    margin: 5px;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+#btn-icones:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px){
+    .container-pai{
+        width: 90%; 
+        height: 50%;
+        padding: 20px;
+    }
+
+    .icone-whatsapp {
+        width: 40px; 
+        height: 40px;
+    }
+
+    .container-filho {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    #input {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+    .container-pai {
+        width: 40%; 
+    }
+
+    .icone-whatsapp {
+        width: 50px; 
+        height: 50px;
+    }
+
+}

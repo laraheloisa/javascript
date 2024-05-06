@@ -6,6 +6,8 @@
     <title>Gerador de link</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
    
 
     <link rel="stylesheet" href="style.css">
@@ -13,19 +15,31 @@
 
 </head>
 <body>
-    <div class="container">
-        <div class="titulo">
-            <h1>Gerador de link</h1>
+    <div class="container-pai">
+        <div class="container-filho">
+            <div class="titulo">
+                <h1>Gerador de link</h1>
+            </div>
+            <div>
+                <img src="whatsapp.svg" alt="ícone whatsapp" class="icone-whatsapp">
+            </div>
         </div>
-        <div>
-            <img src="whatsapp.svg" alt="ícone whatsapp">
-        </div>
-        <div>
-            <textarea name="input" id="input" rows="5"></textarea>
-        </div>
-        <button class="btn-icones"><i class="material-icons">attachment</i></button>
-        <button class="btn-icones"><i class="material-icons">attachment</i></button>
 
+        <div class="container-filho">
+            <div>
+               <input type="tel" id="input" placeholder="Telefone">
+            </div>
+            
+            <div>
+                <button id="btn-icones"><i class="material-icons">attachment</i></button>
+            </div>
+    
+            <div>
+                <button id="btn-icones"><i class="material-symbols-outlined">
+                exit_to_app</i></button>
+            </div>
+        </div>
+       
     </div>
 </body>
 </html> 
