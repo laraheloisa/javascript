@@ -3,7 +3,7 @@ O nome cada variável é chamada de identificador, não pode conter espaços, pa
 
  
 ## Declaração de variáveis
- - *As variáveis podem ser declaradas por palavras-chaves como:* ***var, let ou const***
+ - *As variáveis podem ser declaradas por palavras-chaves como:* ***var --> escopo dele é uma função, ele 'vive' até o final dela, ou seja, não muda (FUNCTION SCOPED), let --> escopo de bloco, ela pode mudar (BLOCK SCOPED) ou const --> voce pode utilizar quando vc não quer que sua variável troque de conteúdo***
 
 *Exemplo:*
 
