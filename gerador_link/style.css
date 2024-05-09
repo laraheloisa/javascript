@@ -76,6 +76,29 @@ body{
     background-color: #0056b3;
 }
 
+#link{
+    user-select: none;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 20vw;
+    font-size: 12px;
+    font-family: "Schibsted Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+}
+
+#copiar{
+    font-size: 10px;
+    font-family: "Schibsted Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+}
+
 @media screen and (max-width: 768px){
     .container-pai{
         width: 90%; 
@@ -95,6 +118,38 @@ body{
 
     #input {
         width: 100%;
+    }
+
+    #btn-icones{
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    
+
+    #link{
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        width: 30vw;
+        font-size: 10px;
+        font-family: "Schibsted Grotesk", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        
+    }
+    
+    #copiar{
+        font-size: 5px;
+        font-family: "Schibsted Grotesk", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        
     }
 
 }
