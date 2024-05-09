@@ -27,12 +27,42 @@
 
 ## - String
 - *Sequência de caracteres.
+"",'' => são a mesma coisa, `` => eu consigo pular linhas
 *Exemplo:* 
 ``````javascript
 // String
 var minhaString = "Olá, mundo!";
 console.log(minhaString); // Saída: Olá, mundo!
+//String -> texto
+const numero = 30
+const texto =  `O número é ${numero}`
+//funções para trabalhar com string
+//métodos que podemos trabalhar com a string
+let nome = new String('Lara')
+let sobrenome = new String('Deitos')
+
+console.log(nome.charAt(0)) // retorna o caracter da posição
+console.log(nome.charCodeAt(0)) // retorna o código do caracter na posição x
+console.log(nome.IndexOf('a')) // retorna a primeira posição do conteúdo
+console.log(nome.lastIndexOf('a')) // retorna a ultima posição do conteúdo 
+console.log(nome.concat(sobrenome))
+console.log(nome.localeCompare(sobrenome)) // 0 = iguais, 1 ou -1 = diferentes
+nome = console.log(nome.concat(sobrenome))
+
+
+let nome = new String('Lara Deitos')
+let nome2 = new String('Lara Deitos')
+
+console.log(nome.replace('Deitos', 'Silva'))
+let arr_nome = nome.split("") //fazer  a divisão onde tiver um espaço
+
+
+//search fazer pesquisas dentro da string
+//slice faz um corte na string
+
+
 ``````
+
 
 ## - Boolean
 - *Representa um valor verdadeiro (true) ou falso (false).
