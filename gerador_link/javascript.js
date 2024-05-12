@@ -31,6 +31,12 @@ inputTelefone.addEventListener('click', function(){
     copiarLink.textContent = '';
 })
 
+inputTelefone.addEventListener('input', function(){
+    const limpaValor = inputTelefone.value.replace(/\D/g, '');//substir dados não numéricos por nada
+    inputTelefone.value = limpaValor
+    
+})
+
 
 //A função writeText() retorna uma promise, que é resolvida quando o texto foi copiado com sucesso, ou rejeitada quando ocorre um erro de permissão de escrita.
 
