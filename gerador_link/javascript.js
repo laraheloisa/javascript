@@ -1,5 +1,6 @@
 const inputTelefone = document.getElementById('input');
 const btngeraLink = document.getElementById('btn-icones');
+const btnClike = document.getElementById('btn-icones');
 const geraLink = document.getElementById('link');
 const copiarLink = document.getElementById('copiar');
 
@@ -32,13 +33,21 @@ inputTelefone.addEventListener('click', function(){
 })
 
 inputTelefone.addEventListener('input', function(){
-    const limpaValor = inputTelefone.value.replace(/\D/g, '');//substir dados não numéricos por nada
-    inputTelefone.value = limpaValor
+    const valorTelefone = inputTelefone.value.replace(/\D/g, '');
+    inputTelefone.value = valorTelefone;
+
+    let mascara = valorTelefone.replace(/(\d{2})(\d{4,5})(\d{4})/, '($1) $2-$3');
+    inputTelefone.value = mascara 
+
     
 })
 
 
-//A função writeText() retorna uma promise, que é resolvida quando o texto foi copiado com sucesso, ou rejeitada quando ocorre um erro de permissão de escrita.
+function novaAba(url){
+    var win = window.open(url, '_blank');
+    win.focus();
+}
 
-//Clipboard.writeText()
-//writeText()
+btnClike.addEventListener('click', function() {
+    novaAba(url);
+  });
