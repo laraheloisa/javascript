@@ -1,6 +1,6 @@
 const inputTelefone = document.getElementById('input');
-const btngeraLink = document.getElementById('btn-icones');
-const btnClike = document.getElementById('btn-icones');
+const btngeraLink = document.getElementById('btnLink');
+const btnClike = document.getElementById('btnClike');
 const geraLink = document.getElementById('link');
 const copiarLink = document.getElementById('copiar');
 
@@ -12,6 +12,8 @@ btngeraLink.addEventListener('click', function() {
         let copiar = 'Clique no link para copiar'
 
         geraLink.innerHTML = linkWhatsApp; 
+        geraLink.classList.add("link")
+        
         copiarLink.textContent = copiar;
    
     } else {
@@ -30,7 +32,11 @@ function clicar() {
 
 inputTelefone.addEventListener('click', function(){
     copiarLink.textContent = '';
+    geraLink.textContent = '';
+    geraLink.classList.remove("link")
 })
+
+
 
 inputTelefone.addEventListener('input', function(){
     const valorTelefone = inputTelefone.value.replace(/\D/g, '');
@@ -49,5 +55,15 @@ function novaAba(url){
 }
 
 btnClike.addEventListener('click', function() {
+    let url = geraLink.innerText
     novaAba(url);
   });
+
+
+
+//inputTelefone.addEventListener('input', funccion(){
+ //   const valorTelefone = inputTelefone.lenght === 11;
+ //   if(valorTelefone != 11)
+
+
+//})

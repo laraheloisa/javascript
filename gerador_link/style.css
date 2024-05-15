@@ -62,7 +62,7 @@ body{
     outline: none; /* remove a borda de destaque padrão do navegador, proporcionando uma experiência de usuário mais limpa.*/
 }
 
-#btn-icones{
+.btn-icones{
     background-color: green;
     color: white;
     border: none;
@@ -72,11 +72,11 @@ body{
     height: 40px;
 }
 
-#btn-icones:hover {
+.btn-icones:hover {
     background-color: #0056b3;
 }
 
-#link{
+.link{
     user-select: none;
     border: 2px solid #ccc;
     border-radius: 5px;
