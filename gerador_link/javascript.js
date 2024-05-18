@@ -4,14 +4,15 @@ const btnClike = document.getElementById('btnClike');
 const geraLink = document.getElementById('link');
 const copiarLink = document.getElementById('copiar');
 
-btngeraLink.disabled = true; 
+
 btnClike.disabled = true; 
 
 btngeraLink.addEventListener('click', function() {
     const telefone = inputTelefone.value;
 
 
-    if (telefone.trim() !== '' && telefone.length === 11) {
+    if (telefone.trim() !== '' && telefone.length === 15) {
+
         const linkWhatsApp = `https://wa.me//55${telefone}`;
         let copiar = 'Clique no link para copiar'
 
@@ -19,6 +20,7 @@ btngeraLink.addEventListener('click', function() {
         geraLink.classList.add("link")
         
         copiarLink.textContent = copiar;
+        btnClike.disabled = false; 
 
 
    
