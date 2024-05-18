@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -23,7 +22,7 @@ body{
     background-color: white;
     border-radius: 10px;
     width: 30vw;
-    height: 40vh;
+    height: 30vh;
     margin: auto;
 }
 
@@ -112,7 +111,6 @@ body{
     }
 
     .container-filho {
-        flex-direction: column;
         align-items: center; 
     }
 
@@ -130,11 +128,12 @@ body{
     }
     
 
-    #link{
+    .link{
+        user-select: none;
         border: 2px solid #ccc;
         border-radius: 5px;
         padding: 5px;
-        width: 30vw;
+        width: 50vw;
         font-size: 10px;
         font-family: "Schibsted Grotesk", sans-serif;
         font-optical-sizing: auto;
@@ -144,7 +143,7 @@ body{
     }
     
     #copiar{
-        font-size: 5px;
+        font-size: 10px;
         font-family: "Schibsted Grotesk", sans-serif;
         font-optical-sizing: auto;
         font-weight: weight;
