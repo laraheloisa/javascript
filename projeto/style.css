@@ -37,6 +37,8 @@ body{
     border: 2px solid #0d0d0d;
     border-radius: 10px;
     width: 100vh;
+    position: relative;
+    bottom: 20px;
 }
 
 
