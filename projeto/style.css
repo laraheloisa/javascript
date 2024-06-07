@@ -51,7 +51,7 @@ body{
 
 }
 
-button{
+#btn-Criar{
     display: flex;
     align-items: center;
     background-color: #1e6f9f;
@@ -65,10 +65,9 @@ button{
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: bold;
-
-   
+    
+    
 }
-
 #btn-Criar:hover {
     background-color: #0056b3;
 }
@@ -77,39 +76,33 @@ button{
     color: #d9d9d9;
     font-family: "Inter";
     font-size: 14px;
-   
 }
 
-
-.processo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 50vw;
-    font-family: "Inter";
-    font-size: 12px;
-    font-weight: bold;
-    margin-top: 15px;
-    
+#listadeTarefas{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.criadas{
-    color: #4ea8de;
-}
-
-.concluídas{
-    color: #5e60ce;
-}
-
-#cria-tarefa{
-    background-color: #333;
-    width: 50vw ;
+#listadeTarefas li{
+    margin-top: 40px;
     padding: 20px;
-    color: #d9d9d9;
+    width: 50vw;
+    background-color: #333;
     border-radius: 10px;
-    font-family: "Inter";
-    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.btnAcao{
+    border-radius: 20px;
+    border: none;
+    background-color: #333;
+    color: #0d0d0d;
+
+}
+
 
 .container-filho2{
     display: flex;
@@ -117,6 +110,7 @@ button{
     flex-direction: column;
     margin-top:  80px;
 }
+
 #texto1{
     color: #d9d9d9;
     font-family: "Inter";
