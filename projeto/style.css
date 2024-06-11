@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #262626;
+    background-color: #1a1a1a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,6 @@ body{
     justify-content: center;
     
 }
-
 
 .cabeçalho{
     background-color: #0d0d0d;
@@ -38,7 +37,7 @@ body{
 }
 
 #input{
-    background-color: #333;
+    background-color: #262626;
     border: 1px solid #0d0d0d;
     width: 50vw ;
     padding: 20px;
@@ -51,7 +50,7 @@ body{
 
 }
 
-#btn-Criar{
+#btnCriaTarefa{
     display: flex;
     align-items: center;
     background-color: #1e6f9f;
@@ -65,17 +64,11 @@ body{
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: bold;
-    
-    
-}
-#btn-Criar:hover {
-    background-color: #0056b3;
+     
 }
 
-#aviso{
-    color: #d9d9d9;
-    font-family: "Inter";
-    font-size: 14px;
+#btnCriaTarefa:hover {
+    background-color: #0056b3;
 }
 
 #listadeTarefas{
@@ -85,24 +78,38 @@ body{
 }
 
 #listadeTarefas li{
-    margin-top: 40px;
+    user-select: none;
+    margin: 10px;
+    margin-top: 5px;
     padding: 20px;
-    width: 50vw;
-    background-color: #333;
+    width: 57vw;
+    background-color: #262626;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.btnAcao{
-    border-radius: 20px;
-    border: none;
-    background-color: #333;
-    color: #0d0d0d;
+
+
+.nomeTarefaCriada{
+    color: #d9d9d9;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 80%;
+    
 
 }
 
+
+.btnAcao{
+    border-radius: 20px;
+    border: none;
+    color: #808080;
+    background-color: #262626;
+
+}
 
 .container-filho2{
     display: flex;
@@ -124,4 +131,6 @@ body{
     font-size: 14px;
 }
 
-
+#clipboard-img{
+  
+}
