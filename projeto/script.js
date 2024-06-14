@@ -27,16 +27,18 @@ function mostraTarefas() {
     lista.forEach( tarefa => { //passa por cada item do array
         novalista = novalista + `
         <li class="task">
-                <div>
-                    <img src="Checked=true, Hover=false.png" alt="checked">
-                </div>
-                <div class='nomeTarefaCriada'>${tarefa}</div>
-                <div>
-                    <button class="btnAcao">
-                        <img src="trash.png" alt="delete">
-                    </button>
-                </div>
-           </li> 
+            <div>
+                <img src="Checked=true, Hover=false.png" alt="checked">
+            </div>
+            <div class="nomeTarefaCriada">${tarefa}</div>
+            <div>
+                <button class="btnAcao">
+                <i class="material-icons">
+                    delete_forever
+                    </i>
+                </button>
+            </div>
+        </li> 
         `
     })
 
@@ -51,4 +53,5 @@ function clipboard(){
     imgClipboard.style.display = 'none'
 
 }
+
 
