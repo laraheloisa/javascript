@@ -1,6 +1,7 @@
 const inputNovaTarefa = document.getElementById('input')
 const btnCriaTarefa = document.getElementById('btnCriaTarefa')
 const listaTarefas = document.getElementById('listadeTarefas')
+const imgClipboard = document.getElementById('clipboard-img')
 const texto1 = document.getElementById("texto1")
 const texto2 = document.getElementById("texto2")
 
@@ -14,12 +15,14 @@ btnCriaTarefa.addEventListener('click', function(){
     mostraTarefas()
     texto1.textContent = " "
     texto2.textContent = " "
+    clipboard()
 
 
 })
 
 function mostraTarefas() {
-    let novalista = ' '
+    let novalista = []
+
 
     lista.forEach( tarefa => { //passa por cada item do array
         novalista = novalista + `
@@ -40,3 +43,12 @@ function mostraTarefas() {
     listaTarefas.innerHTML = novalista
     
 }
+
+
+function clipboard(){
+    let task = inputNovaTarefa.value;
+    if ( task !== ' ')
+    imgClipboard.style.display = 'none'
+
+}
+

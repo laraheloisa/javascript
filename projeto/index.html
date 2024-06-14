@@ -13,7 +13,7 @@
    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -30,6 +30,16 @@
             <button id="btnCriaTarefa">Criar<i><span class="material-symbols-outlined">add_circle
             </span></i></button>
         </div>
+
+        <div class="processo">
+            <div class="criadas">
+                <h3>Tarefas Criadas</h3>
+            </div>
+            <div class="concluídas">
+                <h3>Tarefas Concluídas</h3>
+            </div>
+        </div>
+
         <ul id="listadeTarefas">
            <li class="task">
                 <div>
@@ -38,7 +48,9 @@
                 <div class="nomeTarefaCriada"></div>
                 <div>
                     <button class="btnAcao">
-                        <img src="trash.png" alt="delete">
+                       <i><span class="material-symbols-outlined">
+                        delete
+                        </span></i>
                     </button>
                 </div>
              </li> 
